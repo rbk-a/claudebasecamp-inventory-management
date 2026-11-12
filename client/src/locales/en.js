@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -126,6 +127,20 @@ export default {
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
       actualDelivery: 'Actual Delivery'
+    },
+    submittedOrders: {
+      title: 'Submitted Orders',
+      empty: 'No restock orders have been submitted yet.',
+      loadError: 'Failed to load submitted orders',
+      orderNumber: 'Order Number',
+      items: 'Items',
+      submittedDate: 'Submitted',
+      leadTime: 'Lead Time',
+      expectedDelivery: 'Expected Delivery',
+      totalCost: 'Total Cost',
+      status: 'Status',
+      days: '{count} days',
+      submitted: 'Submitted'
     }
   },
 
@@ -207,6 +222,52 @@ export default {
     inStock: 'In Stock',
     lowStock: 'Low Stock',
     adequate: 'Adequate'
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Plan restock orders from forecasted demand within a budget',
+    budgetControl: 'Budget',
+    budgetSlider: 'Budget slider',
+    budgetInput: 'Budget amount',
+    budgetInUsd: 'Budget is entered in USD',
+    applyRecommendation: 'Apply recommendation',
+    budgetHint: 'Moving the budget resets the selection to the recommendation.',
+    recommendationTitle: 'Recommended Restock',
+    noNeed: 'No items need restocking based on the current forecasts.',
+    summary: {
+      budget: 'Budget',
+      selectedTotal: 'Selected Total',
+      remaining: 'Remaining',
+      longestLeadTime: 'Longest Lead Time',
+      itemCount: 'Items Selected'
+    },
+    daysValue: '{count} days',
+    itemsValue: '{count} items',
+    table: {
+      select: 'Select',
+      sku: 'SKU',
+      itemName: 'Item Name',
+      trend: 'Trend',
+      need: 'Need',
+      quantity: 'Quantity',
+      unitCost: 'Unit Cost',
+      lineTotal: 'Line Total',
+      leadTime: 'Lead Time (days)'
+    },
+    placeOrder: 'Place Order',
+    submitting: 'Submitting...',
+    overBudget: 'The selected total exceeds the budget.',
+    loadError: 'Failed to load forecasts: {message}',
+    submitError: 'Failed to place the order.',
+    success: {
+      title: 'Order placed',
+      orderNumber: 'Order {number}',
+      total: 'Total: {total}',
+      expectedDelivery: 'Expected delivery: {date}',
+      viewOrders: 'View orders'
+    }
   },
 
   // Trends
